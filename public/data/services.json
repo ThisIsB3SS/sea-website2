@@ -1,0 +1,22 @@
+[
+   {
+      "title": "Conception Web",
+      "description": "Création de sites Web esthétiques, réactifs et faciles à naviguer, adaptés à tous les appareils. Notre approche met l'accent sur l'expérience utilisateur (UX) pour convertir efficacement les visiteurs en clients.",
+      "image": ""
+   },
+   {
+      "title": "Développement d'Applications",
+      "description": "Développement d'applications Web & Mobile sur mesure pour répondre à vos besoins spécifiques. Nous utilisons les dernières technologies pour construire des solutions scalables et sécurisées, sur Android & iOS.",
+      "image": ""
+   },
+   {
+      "title": "Stratégie Digitale",
+      "description": "Stratégies de marketing digital personnalisées incluant l'optimisation et le suivi du référencement SEO,  la maintenance de vos sites et applications pour augmenter votre visibilité en ligne et propulser vos services sur le Web !",
+      "image": ""
+   },
+   {
+      "title": "E-commerce",
+      "description": "Création de boutiques en ligne performantes et sécurisées pour vendre vos produits et services en ligne. Nous vous accompagnons dans la mise en place de votre boutique, la gestion de vos stocks et la mise en place de vos moyens de paiement.",
+      "image": ""
+   }
+]

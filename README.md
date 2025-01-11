@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + TailwindCSS + Shadcn + ESLint + Prettier = 🚀
+# React + TypeScript + Vite + TailwindCSS + Shadcn + ESLint + Prettier + Husky + lint-staged = 🚀
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
