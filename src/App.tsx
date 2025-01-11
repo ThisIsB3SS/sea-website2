@@ -1,30 +1,27 @@
 import '@/App.css';
-import Navbar from '@/layout/navbar';
+import Navbar from '@/layout/Navbar';
 import Logo from '@/layout/Logo';
-import { motion } from 'framer-motion';
+import Hero from '@/components/Hero';
+import Projects from '@/components/Projects';
+import About from '@/components/About';
+import Services from '@/components/Services';
+import Testimonials from '@/components/Testimonials';
+import Contact from '@/components/Contact';
+import Footer from '@/layout/Footer';
 function App() {
   return (
     <>
-      <Logo />
-      <Navbar />
-      <div className="flex flex-col items-center justify-center h-screen gap-4">
-        <motion.p
-          className="text-xl text-gray-500"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 20 }}
-          transition={{ duration: 1 }}
-        >
-          Surfez sur le digital
-        </motion.p>
-        <motion.p
-          className="text-xl text-gray-500"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 100 }}
-          transition={{ duration: 1.5 }}
-        >
-          Donnez de l'émotion
-        </motion.p>
-      </div>
+      <main className="flex flex-col items-center justify-center h-screen">
+        <Logo />
+        <Navbar />
+        <Hero />
+        {/* <Projects />
+        <About />
+        <Services />
+        <Testimonials /> */}
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

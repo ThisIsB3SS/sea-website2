@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Louise Desmons",
+    "type": "Artiste Conteuse",
+    "description": "This is a project description",
+    "tags": ["Wordpress", "UI Design", "Custom Code", "Site Vitrine"],
+    "link": "http://louisedesmons.com",
+    "image": "/assets/projects_images/louise-desmons.webp"
+  },
+  {
+    "title": "Gabrielle Alya",
+    "type": "Artiste Chanteuse",
+    "description": "This is a project description",
+    "tags": ["Wordpress", "Website", "UI Design", "Custom Code"],
+    "link": "http://www.gabriellealya.com",
+    "image": "/assets/projects_images/gabrielle-alya.webp "
+  },
+  {
+    "title": "Sobrondy",
+    "type": "E-commerce",
+    "description": "This is a project description",
+    "tags": ["Shopify", "Luxe", "UI Design", "E-commerce"],
+    "link": "http://www.sobrondy.com",
+    "image": "/assets/projects_images/sobrondy.webp "
+  },
+  {
+    "title": "Delphine Dumas",
+    "type": "Artiste Conteuse",
+    "description": "This is a project description",
+    "tags": ["Wordpress", "Website", "UI Design", "Custom Code"],
+    "link": "https://www.conteuse-delphinedumas.fr/",
+    "image": "/assets/projects_images/delphine-dumas.webp"
+  },
+  {
+    "title": "Yvonne Waska",
+    "type": "E-commerce",
+    "description": "This is a project description",
+    "tags": ["Shopify", "Luxe", "Mode", "E-commerce"],
+    "link": "https://www.yvonnewaska.com/",
+    "image": "/assets/projects_images/yvonne-waska.webp"
+  }
+]
