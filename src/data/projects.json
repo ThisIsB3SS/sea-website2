@@ -5,7 +5,8 @@
     "description": "This is a project description",
     "tags": ["Wordpress", "UI Design", "Custom Code", "Site Vitrine"],
     "link": "http://louisedesmons.com",
-    "image": "/assets/projects_images/louise-desmons.webp"
+    "image": "/assets/projects_images/louise-desmons.webp",
+    "color": "#FF5733"
   },
   {
     "title": "Gabrielle Alya",
@@ -13,7 +14,8 @@
     "description": "This is a project description",
     "tags": ["Wordpress", "Website", "UI Design", "Custom Code"],
     "link": "http://www.gabriellealya.com",
-    "image": "/assets/projects_images/gabrielle-alya.webp "
+    "image": "/assets/projects_images/gabrielle-alya.webp ",
+    "color": "#33FF57"
   },
   {
     "title": "Sobrondy",
@@ -21,7 +23,8 @@
     "description": "This is a project description",
     "tags": ["Shopify", "Luxe", "UI Design", "E-commerce"],
     "link": "http://www.sobrondy.com",
-    "image": "/assets/projects_images/sobrondy.webp "
+    "image": "/assets/projects_images/sobrondy.webp ",
+    "color": "#3357FF"
   },
   {
     "title": "Delphine Dumas",
@@ -29,7 +32,8 @@
     "description": "This is a project description",
     "tags": ["Wordpress", "Website", "UI Design", "Custom Code"],
     "link": "https://www.conteuse-delphinedumas.fr/",
-    "image": "/assets/projects_images/delphine-dumas.webp"
+    "image": "/assets/projects_images/delphine-dumas.webp",
+    "color": "#FF33A1"
   },
   {
     "title": "Yvonne Waska",
@@ -37,6 +41,7 @@
     "description": "This is a project description",
     "tags": ["Shopify", "Luxe", "Mode", "E-commerce"],
     "link": "https://www.yvonnewaska.com/",
-    "image": "/assets/projects_images/yvonne-waska.webp"
+    "image": "/assets/projects_images/yvonne-waska.webp",
+    "color": "#FFC300"
   }
 ]

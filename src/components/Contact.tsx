@@ -42,7 +42,7 @@ function Contact() {
   }, [isCopied]);
 
   return (
-    <div
+    <section
       className="contact-section size-full px-12 flex flex-col items-center justify-center gap-8"
       id="Contact"
     >
@@ -101,7 +101,7 @@ function Contact() {
           Copier l'email
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,5 +1,7 @@
 function Testimonials() {
-  return <div className="testimonials-section size-full">Testimonials</div>;
+  return (
+    <section className="testimonials-section size-full">Testimonials</section>
+  );
 }
 
 export default Testimonials;

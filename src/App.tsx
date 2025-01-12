@@ -11,7 +11,7 @@ import Footer from '@/layout/Footer';
 import { useContext, createContext } from 'react';
 
 // Créer un contexte pour SECTION_HEIGHT
-const SectionHeightContext = createContext<number>(800);
+const SectionHeightContext = createContext<number>(900);
 function App() {
   const SECTION_HEIGHT = useContext(SectionHeightContext);
   return (

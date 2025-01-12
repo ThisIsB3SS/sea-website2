@@ -17,7 +17,7 @@ function About() {
     },
   ];
   return (
-    <div className="about-section w-full h-fit px-12" id="A propos">
+    <section className="about-section w-full h-fit px-12" id="A propos">
       <h2 className="text-gray-500 text-2xl font-bold">A propos</h2>
       <div className="about-cards-container flex items-center justify-center gap-4 flex-wrap size-full">
         {data.map((item, index) => {
@@ -41,7 +41,7 @@ function About() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

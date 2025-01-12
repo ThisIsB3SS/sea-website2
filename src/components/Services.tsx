@@ -23,7 +23,7 @@ function Services() {
     },
   ];
   return (
-    <div className="services-section size-full" id="Services">
+    <section className="services-section size-full" id="Services">
       <h2 className="text-gray-500 text-2xl font-bold">Services</h2>
       <div className="services-cards-container flex items-center justify-center gap-4 flex-wrap size-full">
         {data.map((item, index) => {
@@ -60,7 +60,7 @@ function Services() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 
