@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 function Projects() {
   return (
     <section
-      className="projects-section relative w-full flex flex-col items-center justify-start"
+      className="projects-section relative w-full flex flex-col items-center justify-start "
       id="projects"
       style={{ height: `${data.length * 90}vh` }}
     >
