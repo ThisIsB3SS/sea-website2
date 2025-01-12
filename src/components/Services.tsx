@@ -16,7 +16,7 @@ function Services() {
 
   return (
     <section className="services-section size-full px-12" id="Services">
-      <h2 className="text-gray-500 text-4xl font-bold">Services</h2>
+      <h2 className="text-gray-500 text-2xl font-bold">Services</h2>
       <div className="services-cards-container flex items-start justify-center gap-12 flex-wrap size-full">
         {data.map((item: any, index: number) => {
           return (

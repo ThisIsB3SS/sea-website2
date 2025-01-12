@@ -27,7 +27,13 @@ function App() {
   }, []);
   return (
     <SectionHeightContext.Provider value={SECTION_HEIGHT}>
-      <main className="flex flex-col items-center justify-center h-fit gap-12 mb-12">
+      <main
+        className="flex flex-col items-center justify-center h-fit gap-12 bg-slate-200 z-0 mb-12 "
+        style={{
+          borderBottomLeftRadius: '400px',
+          borderBottomRightRadius: '400px',
+        }}
+      >
         <Logo />
         <Navbar />
         <Hero />
@@ -35,8 +41,8 @@ function App() {
         <About />
         <Services />
         <Testimonials />
-        <Contact />
       </main>
+      <Contact />
       <Footer />
     </SectionHeightContext.Provider>
   );

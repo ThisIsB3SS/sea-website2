@@ -5,11 +5,11 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 function Projects() {
   return (
     <section
-      className="projects-section relative w-full flex items-start justify-start px-12 mb-48"
+      className="projects-section relative w-full flex items-start justify-start px-12 mb-32"
       id="projects"
       style={{ height: `${data.length * 90}vh` }}
     >
-      <h2 className="text-gray-500 text-4xl font-bold">Projets</h2>
+      <h2 className="text-gray-500 text-2xl font-bold">Projets</h2>
       <div className="projects-wrapper flex items-center justify-center flex-wrap size-full">
         {data.map((project: any, index: number) => (
           <motion.div
