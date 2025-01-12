@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import NumberFlow from '@number-flow/react';
-
+import AnimatedNumbers from 'react-animated-numbers';
 function About() {
   const data = [
     {
@@ -30,11 +29,18 @@ function About() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
               <div className="flex flex-col items-center justify-center size-full gap-4">
-                <NumberFlow
-                  value={item.number}
-                  className="text-black text-7xl font-bold before:content-['+'] before:text-7xl before:font-bold before:-ml-8 before:relative  "
+                <AnimatedNumbers
+                  animateToNumber={item.number}
+                  fontStyle={{
+                    fontSize: 40,
+                    color: 'black',
+                    fontWeight: 'bold',
+                  }}
+                  transitions={(index) => ({
+                    type: 'spring',
+                    duration: index + 0.9,
+                  })}
                 />
-
                 <p className="text-gray-500 text-2xl font-bold">{item.text}</p>
               </div>
             </motion.div>
