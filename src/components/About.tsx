@@ -17,13 +17,13 @@ function About() {
   ];
   return (
     <section className="about-section w-full h-fit px-12" id="A propos">
-      <h2 className="text-gray-500 text-2xl font-bold">A propos</h2>
+      <h2 className="text-gray-500 text-4xl font-bold">A propos</h2>
       <div className="about-cards-container flex items-center justify-center gap-4 flex-wrap size-full">
         {data.map((item, index) => {
           return (
             <motion.div
               key={index}
-              className="about-cards flex flex-col items-center justify-center rounded-xl border-2 border-gray-500 w-1/3 h-60"
+              className="about-cards flex items-center justify-center rounded-xl border-2 border-gray-500 w-[25%] h-60"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -32,7 +32,7 @@ function About() {
                 <AnimatedNumbers
                   animateToNumber={item.number}
                   fontStyle={{
-                    fontSize: 40,
+                    fontSize: 60,
                     color: 'black',
                     fontWeight: 'bold',
                   }}
