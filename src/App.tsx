@@ -8,12 +8,23 @@ import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/layout/Footer';
-import { useContext, createContext } from 'react';
-
+import { useContext, createContext, useEffect } from 'react';
+import Lenis from 'lenis';
 // Créer un contexte pour SECTION_HEIGHT
 const SectionHeightContext = createContext<number>(900);
 function App() {
   const SECTION_HEIGHT = useContext(SectionHeightContext);
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <SectionHeightContext.Provider value={SECTION_HEIGHT}>
       <main className="flex flex-col items-center justify-center h-fit gap-12 mb-12">

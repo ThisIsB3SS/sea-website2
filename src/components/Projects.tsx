@@ -1,17 +1,22 @@
 import data from '@/data/projects.json';
+import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+
 function Projects() {
   return (
     <section
       className="projects-section relative w-full flex flex-col items-center justify-start"
       id="projects"
-      style={{ height: `${data.length * 100}vh` }}
+      style={{ height: `${data.length * 90}vh` }}
     >
       {data.map((project: any, index: number) => (
-        <div
-          className="projects-container sticky top-[10vh] flex flex-col items-center justify-center rounded-2xl w-3/4 h-[80vh] my-8"
+        <motion.div
+          className="projects-container sticky top-0 flex flex-col items-center justify-center rounded-2xl w-3/4 h-[80vh] my-14"
           key={project.title}
           style={{ zIndex: data.length - index }}
+          initial={{ scale: 0.9, opacity: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.05 }}
+          whileInView={{ scale: 1.05, opacity: 1 }}
         >
           <div className="projects-inner-container size-full bg-gray-500 p-12 rounded-2xl flex flex-col items-center justify-center">
             <img
@@ -22,7 +27,7 @@ function Projects() {
               width={1000}
             />
           </div>
-          <div className="projects-text-container w-full px-4 flex md:flex-row md:justify-between md:items-center sm:flex-col sm:justify-start sm:items-start gap-2 size-fit">
+          <div className="projects-text-container w-full mt-4 px-4 flex md:flex-row md:justify-between md:items-center sm:flex-col sm:justify-start sm:items-start gap-2 size-fit">
             <h2 className="text-2xl text-gray-500 font-semibold text-nowrap group">
               <a
                 href={project.link}
@@ -57,7 +62,7 @@ function Projects() {
               )}
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </section>
   );
