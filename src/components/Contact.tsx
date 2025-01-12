@@ -43,14 +43,14 @@ function Contact() {
 
   return (
     <div
-      className="contact-section size-full px-12 flex flex-col items-center justify-center mb-40 gap-8"
-      id="contact"
+      className="contact-section size-full px-12 flex flex-col items-center justify-center gap-8"
+      id="Contact"
     >
-      <p className="text-gray-500 text-xl font-bold">
+      <p className="text-gray-500 text-2xl font-bold">
         Parlons de votre projet en visio
       </p>
       <div
-        className="relative  h-52 overflow-hidden border-2 border-gray-500 rounded-full w-3/4 hover:bg-gray-200 group transition-all duration-300 cursor-pointer"
+        className="relative  h-52 overflow-hidden border-2 border-gray-500 rounded-full w-5/6 hover:bg-gray-200 group transition-all duration-300 cursor-pointer"
         onClick={() => window.open(calendarLink, '_blank')}
       >
         <div className="absolute inset-0 z-20 before:absolute before:left-0 before:top-0 before:w-1/6 before:h-full before:bg-gradient-to-r before:from-white before:to-transparent before:filter before:blur-3 after:absolute after:right-0 after:top-0 after:w-1/6 after:h-full after:bg-gradient-to-l after:from-white after:to-transparent after:filter after:blur-3"></div>
@@ -72,7 +72,7 @@ function Contact() {
               key={index}
             >
               Réserver un Call
-              <FaPhone className="size-16 text-gray-500 text-5xl font-bold p-0 m-0 text-center" />
+              <FaPhone className="size-16 text-gray-500 text-5xl font-bold p-0 m-0 text-center  group-hover:text-gray-700 " />
             </span>
           ))}
         </motion.div>

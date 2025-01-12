@@ -11,14 +11,14 @@ import Footer from '@/layout/Footer';
 function App() {
   return (
     <>
-      <main className="flex flex-col items-center justify-center h-screen">
+      <main className="flex flex-col items-center justify-center h-fit gap-12 mb-12">
         <Logo />
         <Navbar />
         <Hero />
-        {/* <Projects />
+        {/* <Projects /> */}
         <About />
         <Services />
-        <Testimonials /> */}
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       <Footer />

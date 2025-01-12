@@ -7,7 +7,7 @@ function Navbar() {
             className=" hover:text-white first:text-white  lg:text-xl md:text-lg sm:text-md text-slate-400 uppercase font-bold  text-nowrap transition-all duration-300"
             key={item}
           >
-            <a href={`/${item}`}>{item}</a>
+            <a href={`#${item}`}>{item}</a>
           </li>
         ))}
       </ul>

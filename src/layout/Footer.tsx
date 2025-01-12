@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="w-screen h-20 flex justify-between items-center absolute bottom-0 mb-8 px-12 py-12">
+    <footer className="w-screen h-20 flex justify-between items-center mb-8 px-12 py-12">
       <div className="flex flex-col items-center justify-center copyright size-fit">
         <p className="text-md text-gray-500">
           Copyright © 2025 SEA Webstudio.
