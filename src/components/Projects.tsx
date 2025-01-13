@@ -5,11 +5,11 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 function Projects() {
   return (
     <section
-      className="projects-section relative w-full flex items-start justify-start px-12 mb-32"
-      id="projects"
+      className="projects-section relative w-full flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center md:px-4 lg:px-12 px-0 mb-32"
+      id="Projets"
       style={{ height: `${data.length * 90}vh` }}
     >
-      <h2 className="text-gray-500 text-2xl font-bold">Projets</h2>
+      <h2 className="text-gray-500 text-2xl font-bold text-center">Projets</h2>
       <div className="projects-wrapper flex items-center justify-center flex-wrap size-full">
         {data.map((project: any, index: number) => (
           <motion.div
@@ -29,7 +29,7 @@ function Projects() {
                 width={1000}
               />
             </div>
-            <div className="projects-text-container w-full mt-4 px-4 flex md:flex-row md:justify-between md:items-center sm:flex-col sm:justify-start sm:items-start gap-2 size-fit">
+            <div className="projects-text-container w-full mt-4 px-4 flex md:flex-row md:justify-between md:items-center flex-col justify-start items-start gap-2 size-fit">
               <h2 className="text-2xl text-gray-500 font-semibold text-nowrap group">
                 <a
                   href={project.link}

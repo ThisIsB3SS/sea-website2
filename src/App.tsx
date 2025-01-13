@@ -38,26 +38,25 @@ function App() {
       {isLoading ? (
         <Loader />
       ) : (
-        <motion.main
-          className="flex flex-col items-center justify-center h-fit w-screen gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0"
-          style={{
-            borderBottomLeftRadius: '400px',
-            borderBottomRightRadius: '400px',
-          }}
-          // initial={{ opacity: 0 }}
-          // animate={{ opacity: 1 }}
-          // transition={{ duration: 1 }}
-        >
-          <Logo />
-          <Navbar />
-          <Hero />
-          <Projects />
-          <About />
-          <Services />
-          <Testimonials />
+        <>
+          <main
+            className="flex flex-col items-center justify-center h-fit w-screen gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0"
+            style={{
+              borderBottomLeftRadius: '400px',
+              borderBottomRightRadius: '400px',
+            }}
+          >
+            <Logo />
+            <Navbar />
+            <Hero />
+            <Projects />
+            <About />
+            <Services />
+            <Testimonials />
+          </main>
           <Contact />
           <Footer />
-        </motion.main>
+        </>
       )}
     </SectionHeightContext.Provider>
   );
