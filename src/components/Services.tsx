@@ -1,11 +1,10 @@
-import data from '@/data/services.json';
+import data from '@/data/data.json';
 import { motion } from 'motion/react';
 import { useState } from 'react';
 
 function Services() {
-  const tags = data.map((item: any) => item.tags);
   const [openStates, setOpenStates] = useState<boolean[]>(
-    new Array(data.length).fill(false)
+    new Array(data.services.length).fill(false)
   );
 
   const toggleCard = (index: number) => {
@@ -21,7 +20,7 @@ function Services() {
     >
       <h2 className="text-gray-500 text-2xl font-bold text-nowrap">Services</h2>
       <div className="services-cards-container flex items-start justify-center gap-12 flex-wrap size-full">
-        {data.map((item: any, index: number) => {
+        {data.services.map((item: any, index: number) => {
           return (
             <motion.div
               key={index}

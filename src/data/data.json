@@ -1,0 +1,250 @@
+{
+  "about": [
+    {
+      "number": 3,
+      "text": "Années d'XP"
+    },
+    {
+      "number": 25,
+      "text": "Projets menés"
+    },
+    {
+      "number": 20,
+      "text": "Clients satisfaits"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Louise Desmons",
+      "type": "Artiste Conteuse",
+      "description": "This is a project description",
+      "tags": ["Wordpress", "UI Design", "Custom Code", "Site Vitrine"],
+      "link": "http://louisedesmons.com",
+      "image": "/assets/projects_images/louise-desmons.webp",
+      "color": "#FF5733"
+    },
+    {
+      "title": "Gabrielle Alya",
+      "type": "Artiste Chanteuse",
+      "description": "This is a project description",
+      "tags": ["Wordpress", "Website", "UI Design", "Custom Code"],
+      "link": "http://www.gabriellealya.com",
+      "image": "/assets/projects_images/gabrielle-alya.webp ",
+      "color": "#33FF57"
+    },
+    {
+      "title": "Sobrondy",
+      "type": "E-commerce",
+      "description": "This is a project description",
+      "tags": ["Shopify", "Luxe", "UI Design", "E-commerce"],
+      "link": "http://www.sobrondy.com",
+      "image": "/assets/projects_images/sobrondy.webp ",
+      "color": "#3357FF"
+    },
+    {
+      "title": "Delphine Dumas",
+      "type": "Artiste Conteuse",
+      "description": "This is a project description",
+      "tags": ["Wordpress", "Website", "UI Design", "Custom Code"],
+      "link": "https://www.conteuse-delphinedumas.fr/",
+      "image": "/assets/projects_images/delphine-dumas.webp",
+      "color": "#FF33A1"
+    },
+    {
+      "title": "Yvonne Waska",
+      "type": "E-commerce",
+      "description": "This is a project description",
+      "tags": ["Shopify", "Luxe", "Mode", "E-commerce"],
+      "link": "https://www.yvonnewaska.com/",
+      "image": "/assets/projects_images/yvonne-waska.webp",
+      "color": "#FFC300"
+    }
+  ],
+  "services": [
+    {
+      "title": "Conception Web",
+      "description": "Création de sites Web esthétiques, réactifs et faciles à naviguer, adaptés à tous les appareils. Notre approche met l'accent sur l'expérience utilisateur (UX) pour convertir efficacement les visiteurs en clients.",
+      "tags": [
+        "Webflow",
+        "Wordpress",
+        "Custom Code",
+        "UI/UX",
+        "Responsive",
+        "SEO-Friendly",
+        "Performance"
+      ],
+      "price": "1k€"
+    },
+    {
+      "title": "Développement d'Applications",
+      "description": "Développement d'applications Web & Mobile sur mesure pour répondre à vos besoins spécifiques. Nous utilisons les dernières technologies pour construire des solutions scalables et sécurisées, sur Android & iOS.",
+      "tags": [
+        "React Native",
+        "Flutter",
+        "Swift",
+        "Android",
+        "iOS",
+        "Scalable",
+        "Secure"
+      ],
+      "price": "1k€"
+    },
+    {
+      "title": "Stratégie Digitale",
+      "description": "Stratégies de marketing digital personnalisées incluant l'optimisation et le suivi du référencement SEO,  la maintenance de vos sites et applications pour augmenter votre visibilité en ligne et propulser vos services sur le Web !",
+      "tags": [
+        "SEO",
+        "Marketing",
+        "Analytics",
+        "Content Strategy",
+        "Social Media",
+        "Growth"
+      ],
+      "price": "1k€"
+    },
+    {
+      "title": "E-commerce",
+      "description": "Création de boutiques en ligne performantes et sécurisées pour vendre vos produits et services en ligne. Nous vous accompagnons dans la mise en place de votre boutique, la gestion de vos stocks et la mise en place de vos moyens de paiement.",
+      "tags": [
+        "Shopify",
+        "WooCommerce",
+        "E-commerce",
+        "Scalable",
+        "Secure",
+        "Performance"
+      ],
+      "price": "1k€"
+    }
+  ],
+  "testimonials": [
+    {
+      "auteur": "Delphine Dumas",
+      "avatar": "/assets/testimonials_avatar/delphine-dumas.png",
+      "poste": "Artiste Conteuse",
+      "message": "Très satisfaite de la prestation de SEA Webstudio. Écoute, accompagnement, créativité et professionnalisme sont au rendez-vous pour répondre exactement au résultat souhaité : un joli site mis en ligne en une semaine. Merci !",
+      "link": "https://www.conteuse-delphinedumas.fr"
+    },
+    {
+      "auteur": "Gabrielle Alya",
+      "avatar": "/assets/testimonials_avatar/gabrielle-alya.jpg",
+      "poste": "Artiste Chanteuse Musicienne",
+      "message": "Très satisfaite de cette collaboration, Sébastien de SEA Webstudio a créé mon site Internet, Gabriellealya.com, et je suis absolument ravie du résultat. Il a su structurer, référencer et me proposer un design qui correspond exactement à mes goûts, couvrant ainsi tous les besoins essentiels. Ce qui m'a particulièrement marquée, c'est son attention aux détails et sa capacité à répondre à mes demandes spécifiques, telles que l'inscription newsletter, les réseaux sociaux et les témoignages. Sa réactivité, son écoute et son suivi rigoureux sont des qualités rares qui font de lui un professionnel avec lequel il est très agréable de travailler en toute confiance.",
+      "link": "https://www.gabriellealya.com",
+      "album": "https://gabriellealya.com/index.php/musique/"
+    },
+    {
+      "auteur": "Charlène B.",
+      "avatar": "/assets/testimonials_avatar/150.jpg",
+      "poste": "Chef de Projet chez Emporium",
+      "message": "J'ai été extrêmement satisfaite par la qualité de service et la communication offerte par l'équipe. Leur expertise technique est impressionnante, notamment en ce qui concerne Shopify. Collaborer avec eux a été un gain de temps significatif. Je les recommande sans hésitation.",
+      "link": "https://www.veganaa.com"
+    },
+    {
+      "auteur": "Sylviane Peltier",
+      "avatar": "/assets/testimonials_avatar/peltier.png",
+      "poste": "Artiste Conteuse",
+      "message": "SEA Webstudio a réalisé mon site Internet, et je suis très satisfaite du résultat. Sébastien est très professionnel, à l'écoute et réactif. Il a su répondre à mes attentes et m'a donné de bons conseils. Je recommande vivement SEA Webstudio.",
+      "link": "https://www.louisedesmons.com"
+    },
+    {
+      "auteur": "Bill Gates",
+      "avatar": "/assets/testimonials_avatar/bill-gates.png",
+      "poste": "Ex-CEO of Microsoft",
+      "message": "SEA Webstudio did a wonderful job improving our website. They are very professional and efficient. I highly recommend them.",
+      "link": "https://www.microsoft.com"
+    },
+    {
+      "auteur": "Lycos",
+      "avatar": "/assets/testimonials_avatar/lycos.png",
+      "poste": "Ex-CEO of Lycos",
+      "message": "Woof ! Woof ! SEA Webstudio woof !",
+      "link": "https://www.lycos.com"
+    }
+  ],
+  "keywords": [
+    "advice",
+    "app",
+    "apps",
+    "boutique",
+    "boutiques",
+    "communication",
+    "communications",
+    "compétence",
+    "compétences",
+    "création",
+    "créations",
+    "creation",
+    "creations",
+    "d'application",
+    "d'applications",
+    "demande",
+    "demandes",
+    "design",
+    "designs",
+    "développement",
+    "développements",
+    "development",
+    "developments",
+    "e-commerce",
+    "fonctionnalité",
+    "fonctionnalités",
+    "functionality",
+    "functionalities",
+    "from scratch",
+    "graphic",
+    "graphics",
+    "graphique",
+    "graphiques",
+    "internet",
+    "internets",
+    "maintenance",
+    "maintenances",
+    "marketing",
+    "mobile",
+    "mobiles",
+    "network",
+    "networks",
+    "professional",
+    "professionalism",
+    "professionals",
+    "professionnel",
+    "professionnelle",
+    "professionnelles",
+    "professionnels",
+    "qualité",
+    "qualités",
+    "quality",
+    "qualities",
+    "référencement",
+    "référencements",
+    "réseau",
+    "réseaux",
+    "sea",
+    "seas",
+    "seo",
+    "seos",
+    "shopify",
+    "site",
+    "sites",
+    "skill",
+    "skills",
+    "(ux)",
+    "(uxs)",
+    "stratégie",
+    "stratégies",
+    "strategy",
+    "strategies",
+    "technologie",
+    "technologies",
+    "technology",
+    "technologies",
+    "visibilité",
+    "visibilités",
+    "visibility",
+    "visibilities",
+    "web",
+    "webs",
+    "webstudio",
+    "webstudios"
+  ]
+}

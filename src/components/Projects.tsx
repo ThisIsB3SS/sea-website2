@@ -1,4 +1,4 @@
-import data from '@/data/projects.json';
+import data from '@/data/data.json';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
@@ -7,15 +7,15 @@ function Projects() {
     <section
       className="projects-section relative w-full flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center md:px-4 lg:px-12 px-0 mb-32"
       id="Projets"
-      style={{ height: `${data.length * 90}vh` }}
+      style={{ height: `${data.projects.length * 90}vh` }}
     >
       <h2 className="text-gray-500 text-2xl font-bold text-center">Projets</h2>
       <div className="projects-wrapper flex items-center justify-center flex-wrap size-full">
-        {data.map((project: any, index: number) => (
+        {data.projects.map((project: any, index: number) => (
           <motion.div
             className="projects-container  flex flex-col items-center justify-center rounded-2xl w-3/4 h-[80vh] my-14"
             key={project.title}
-            style={{ zIndex: data.length - index }}
+            style={{ zIndex: data.projects.length - index }}
             initial={{ scale: 0.9, opacity: 0 }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
             whileInView={{ scale: 1.05, opacity: 1 }}

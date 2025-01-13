@@ -1,20 +1,7 @@
 import { motion } from 'framer-motion';
+import data from '../data/data.json';
 import AnimatedNumbers from 'react-animated-numbers';
 function About() {
-  const data = [
-    {
-      number: 3,
-      text: "Années d'XP",
-    },
-    {
-      number: 25,
-      text: 'Projets menés',
-    },
-    {
-      number: 20,
-      text: 'Clients satisfaits',
-    },
-  ];
   return (
     <section
       className="about-section w-full h-fit flex lg:flex-row flex-col items-start justify-start px-12 lg:gap-0 gap-8"
@@ -22,7 +9,7 @@ function About() {
     >
       <h2 className="text-gray-500 text-2xl font-bold text-nowrap">A propos</h2>
       <div className="about-cards-container flex items-center justify-center gap-4 flex-wrap size-full">
-        {data.map((item, index) => {
+        {data.about.map((item, index) => {
           return (
             <motion.div
               key={index}
