@@ -30,6 +30,20 @@ function Footer() {
             <FaGithub className={`size-8`} />
           </a>
         </div>
+        <div className="flex items-center size-fit justify-center border-2 rounded-lg p-2 ">
+          <a
+            href="https://www.codeur.com/-sebastien_sq"
+            target="_blank"
+            aria-label="Suivez-nous sur Codeur.com !"
+          >
+            <img
+              src="/assets/CodeurLogo.svg"
+              alt="Follow us on Codeur.com"
+              height={40}
+              width={40}
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );
