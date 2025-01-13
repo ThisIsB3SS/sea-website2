@@ -32,7 +32,7 @@ function App() {
   }, []);
   setTimeout(() => {
     setIsLoading(false);
-  }, 2200);
+  }, 1900);
   return (
     <SectionHeightContext.Provider value={SECTION_HEIGHT}>
       {isLoading ? (

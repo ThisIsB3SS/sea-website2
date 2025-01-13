@@ -17,7 +17,7 @@ function Projects() {
             key={project.title}
             style={{ zIndex: data.projects.length - index }}
             initial={{ scale: 0.9, opacity: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.05 }}
+            transition={{ duration: 0.5, delay: index * 0.08 }}
             whileInView={{ scale: 1.05, opacity: 1 }}
           >
             <div className="projects-inner-container size-full bg-gray-500 p-12 rounded-2xl flex flex-col items-center justify-center">
