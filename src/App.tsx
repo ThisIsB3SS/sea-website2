@@ -31,7 +31,7 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
   setTimeout(() => {
-    setIsLoading(true);
+    setIsLoading(false);
   }, 2200);
   return (
     <SectionHeightContext.Provider value={SECTION_HEIGHT}>
@@ -39,7 +39,7 @@ function App() {
         <Loader />
       ) : (
         <motion.main
-          className="flex flex-col items-center justify-center h-fit gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0"
+          className="flex flex-col items-center justify-center h-fit w-screen gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0"
           style={{
             borderBottomLeftRadius: '400px',
             borderBottomRightRadius: '400px',

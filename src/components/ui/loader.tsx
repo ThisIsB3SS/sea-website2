@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 
 function Loader() {
   return (
-    <motion.div className="w-screen h-screen bg-slate-200  z-50 relative flex flex-col items-center justify-center">
+    <motion.div className="w-screen h-screen bg-slate-200 z-50 flex flex-col items-center justify-start m-0 p-0">
       <motion.div
-        className="fixed -top-12 left-[42%] -translate-x-[42%] right-0 z-50 border-none size-fit "
-        initial={{ top: '50%', translateY: '-50%' }}
-        animate={{ top: '-3rem', translateY: '0%' }}
+        className="mx-auto z-50 border-none size-fit "
+        initial={{ translateY: '20rem' }}
+        animate={{ translateY: '-3rem' }}
         transition={{ delay: 1.5, duration: 0.3 }}
       >
         <motion.div className="relative size-fit">
