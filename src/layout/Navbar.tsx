@@ -1,10 +1,30 @@
 import { useActiveSection } from '@/hooks/useActiveSection';
+import { useState, useEffect } from 'react';
 
 function Navbar() {
   const activeSection = useActiveSection();
+  const [isAtFooter, setIsAtFooter] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = document.querySelector('footer');
+      if (footer) {
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        setIsAtFooter(footerTop <= windowHeight);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className="flex justify-between items-center p-3 size-fit backdrop-blur-lg bg-gradient-to-tr from-slate-600 to-slate-900 mb-8 fixed bottom-0 left-1/2 -translate-x-1/2 right-0 z-50 rounded-2xl border-2 border-slate-200">
+    <div
+      className={`flex justify-between items-center p-3 size-fit backdrop-blur-lg bg-gradient-to-tr from-slate-600 to-slate-900 fixed left-1/2 -translate-x-1/2 right-0 z-50 rounded-2xl border-2 border-slate-200 transition-all duration-300 ease-in-out ${
+        isAtFooter ? 'md:bottom-8 bottom-20' : 'bottom-8'
+      }`}
+    >
       <ul className="flex gap-4 size-full justify-center flex-nowrap p-2">
         {['Projets', 'A propos', 'Services', 'Contact'].map((item) => (
           <li key={item} className="relative">

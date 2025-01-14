@@ -15,7 +15,7 @@ function Contact() {
 
   return (
     <section
-      className="contact-section w-full h-[80vh] px-12 flex flex-col items-center justify-center gap-8"
+      className="contact-section w-full h-[80vh] px-12 flex flex-col items-center justify-center gap-8 m-0"
       id="Contact"
     >
       <p className="text-gray-500 text-xl md:text-2xl font-bold">

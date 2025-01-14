@@ -11,8 +11,7 @@ import Footer from '@/layout/Footer';
 import { useContext, createContext, useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import Loader from './components/ui/loader';
-import { motion } from 'motion/react';
-import { tr } from 'motion/react-client';
+
 // Créer un contexte pour SECTION_HEIGHT
 const SectionHeightContext = createContext<number>(900);
 function App() {
@@ -40,7 +39,7 @@ function App() {
       ) : (
         <>
           <main
-            className="flex flex-col items-center justify-center h-fit w-screen gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0"
+            className="flex flex-col items-center justify-center h-fit w-screen gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0 overflow-hidden"
             style={{
               borderBottomLeftRadius: '400px',
               borderBottomRightRadius: '400px',
