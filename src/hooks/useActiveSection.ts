@@ -22,7 +22,7 @@ export function useActiveSection() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Vérifier la section active au chargement initial
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

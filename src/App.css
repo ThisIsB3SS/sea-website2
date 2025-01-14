@@ -10,3 +10,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.swipe-cards .card:nth-child(1) {
+  rotate: 3deg;
+}
