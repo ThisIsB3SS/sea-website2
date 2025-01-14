@@ -29,13 +29,15 @@ function Projects() {
             aria-label={`Projet ${project.title}`}
           >
             <div className="projects-inner-container w-full lg:w-fit h-fit bg-gray-500 p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="rounded-lg hover:scale-105 transition-all duration-300"
-                height={1000}
-                width={1000}
-              />
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded-lg hover:scale-105 transition-all duration-300"
+                  height={1000}
+                  width={1000}
+                />
+              </a>
             </div>
             <div className="projects-text-container w-full lg:w-[80%] mt-4 flex md:flex-row md:justify-between md:items-center flex-col justify-start items-start gap-2 size-fit">
               <h2 className="text-2xl text-gray-500 font-semibold text-nowrap group">
