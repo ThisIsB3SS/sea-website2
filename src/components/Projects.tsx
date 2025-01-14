@@ -5,22 +5,21 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 function Projects() {
   return (
     <section
-      className="projects-section relative w-full flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center md:px-4 lg:px-12 px-0 mb-32"
+      className="projects-section h-fit w-full flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center md:px-4 lg:px-12 px-0 mb-0"
       id="Projets"
-      style={{ height: `${data.projects.length * 90}vh` }}
     >
       <h2 className="text-gray-500 text-2xl font-bold text-center">Projets</h2>
-      <div className="projects-wrapper flex items-center justify-center flex-wrap size-full">
+      <div className="projects-wrapper flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8">
         {data.projects.map((project: any, index: number) => (
           <motion.div
-            className="projects-container  flex flex-col items-center justify-center rounded-2xl w-3/4 h-[80vh] my-14"
+            className="projects-container  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16"
             key={project.title}
             style={{ zIndex: data.projects.length - index }}
             initial={{ scale: 0.9, opacity: 0 }}
             transition={{ duration: 0.5, delay: index * 0.08 }}
             whileInView={{ scale: 1.05, opacity: 1 }}
           >
-            <div className="projects-inner-container size-full bg-gray-500 p-12 rounded-2xl flex flex-col items-center justify-center">
+            <div className="projects-inner-container w-full lg:w-fit h-fit bg-gray-500 p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center">
               <img
                 src={project.image}
                 alt={project.title}
@@ -29,7 +28,7 @@ function Projects() {
                 width={1000}
               />
             </div>
-            <div className="projects-text-container w-full mt-4 px-4 flex md:flex-row md:justify-between md:items-center flex-col justify-start items-start gap-2 size-fit">
+            <div className="projects-text-container w-full lg:w-[80%] mt-4 flex md:flex-row md:justify-between md:items-center flex-col justify-start items-start gap-2 size-fit">
               <h2 className="text-2xl text-gray-500 font-semibold text-nowrap group">
                 <a
                   href={project.link}
