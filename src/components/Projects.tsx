@@ -10,7 +10,7 @@ function Projects() {
       aria-label="Projets de SEA Webstudio"
     >
       <h2
-        className="text-gray-500 text-2xl font-bold text-center"
+        className="text-gray-500 text-2xl font-regular text-center"
         role="heading"
         aria-level={2}
       >
@@ -58,7 +58,7 @@ function Projects() {
                 {project.tags.map((tag: string, index: number) =>
                   index === project.tags.length - 1 ? (
                     <p
-                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300"
+                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300 cursor-default"
                       key={tag}
                       role="link"
                       aria-label={`Technologie utilisée dans le projet ${project.title} : ${tag}`}
@@ -67,7 +67,7 @@ function Projects() {
                     </p>
                   ) : (
                     <p
-                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300"
+                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300 cursor-default"
                       key={tag}
                       role="link"
                       aria-label={`Technologie utilisée dans le projet ${project.title} : ${tag}`}

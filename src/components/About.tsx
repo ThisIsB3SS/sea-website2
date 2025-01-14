@@ -8,7 +8,9 @@ function About() {
       id="A propos"
       aria-label="A propos de SEA Webstudio"
     >
-      <h2 className="text-gray-500 text-2xl font-bold text-nowrap">A propos</h2>
+      <h2 className="text-gray-500 text-2xl font-regular text-nowrap">
+        A propos
+      </h2>
       <div className="about-cards-container flex items-center justify-center gap-4 flex-wrap size-full">
         {data.about.map((item, index) => {
           return (

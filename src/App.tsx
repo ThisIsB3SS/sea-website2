@@ -12,7 +12,6 @@ import { useContext, createContext, useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import Loader from './components/ui/loader';
 
-// Créer un contexte pour SECTION_HEIGHT
 const SectionHeightContext = createContext<number>(900);
 function App() {
   const SECTION_HEIGHT = useContext(SectionHeightContext);
@@ -61,7 +60,6 @@ function App() {
   );
 }
 
-// Utiliser le contexte dans les composants enfants
 export const useSectionHeight = () => {
   return useContext(SectionHeightContext);
 };

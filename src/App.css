@@ -13,3 +13,21 @@ body {
 .swipe-cards .card:nth-child(1) {
   rotate: 3deg;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-p {
+  font-family: 'MontserratAlt', sans-serif;
+}
+p,
+li,
+span {
+  font-family: 'Montserrat', sans-serif;
+}
+nav ul li a {
+  font-family: 'MontserratAlt', sans-serif;
+  font-weight: 600 !important;
+}

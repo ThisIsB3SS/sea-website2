@@ -41,7 +41,7 @@ function Contact() {
         >
           {Array.from({ length: 4 }).map((_, index) => (
             <span
-              className="text-gray-500 lg:text-8xl text-4xl size-full font-bold flex items-center justify-center lg:mx-4 mx-2 gap-8 text-nowrap group-hover:text-gray-700 transition-all duration-300"
+              className="text-gray-500 uppercase lg:text-8xl text-4xl size-full font-bold flex items-center justify-center lg:mx-4 mx-2 gap-8 text-nowrap group-hover:text-gray-700 transition-all duration-300"
               key={index}
             >
               Réserver un Call

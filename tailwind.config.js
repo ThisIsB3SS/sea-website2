@@ -16,6 +16,11 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        fontFamily: {
+          montserrat: ['Montserrat', 'sans-serif'],
+          montserratalt: ['MontserratAlt', 'sans-serif'],
+          pinkerston: ['Pinkerston', 'sans-serif'],
+        },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',

@@ -20,7 +20,7 @@ function Services() {
       aria-label="Services de SEA Webstudio"
     >
       <h2
-        className="text-gray-500 text-2xl font-bold text-nowrap"
+        className="text-gray-500 text-2xl font-regular text-nowrap"
         role="heading"
         aria-level={2}
       >
@@ -46,7 +46,7 @@ function Services() {
                 {item.price}
               </p>
               <h3 className="text-black text-3xl font-bold">{item.title}</h3>
-              <p className="text-gray-500 text-lg font-semibold">
+              <p className="text-gray-500 text-lg font-regular">
                 {item.description}
               </p>
 
@@ -57,7 +57,7 @@ function Services() {
                 role="list"
                 aria-label={`Technologies utilisées dans le service ${item.title}`}
               >
-                <ul className="w-full text-gray-500 text-lg font-semibold block ">
+                <ul className="w-full text-gray-500 text-lg font-regular block ">
                   {item.tags
                     .slice(0, Math.ceil(item.tags.length / 2))
                     .map((tag: string, index: number) => (

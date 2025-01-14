@@ -2,8 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'MontserratAlt';
+  src: url('../public/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MontserratAlt';
+  src: url('../public/fonts/Montserrat_Alternates/MontserratAlternates-Thin.ttf')
+    format('truetype');
+  font-weight: 200;
+  font-style: thin;
+}
+
+@font-face {
+  font-family: 'MontserratAlt';
+  src: url('../public/fonts/Montserrat_Alternates/MontserratAlternates-Italic.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MontserratAlt';
+  src: url('../public/fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: semibold;
+}
+@font-face {
+  font-family: 'MontserratAlt';
+  src: url('../public/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Pinkerston';
+  src: url('../public/fonts/Pinkerston.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: MontserratAlt, Pinkerston, Inter, system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

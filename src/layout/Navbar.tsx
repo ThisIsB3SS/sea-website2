@@ -34,7 +34,7 @@ function Navbar() {
           <li key={item} className="relative" role="menuitem">
             <a
               href={`#${item}`}
-              className={`lg:text-xl md:text-lg sm:text-md uppercase font-bold text-nowrap transition-all duration-300 ${
+              className={`!font-montserrat lg:text-xl md:text-lg sm:text-md uppercase font-bold text-nowrap transition-all duration-300 ${
                 activeSection === item
                   ? 'text-white'
                   : 'text-slate-400 hover:text-white'
