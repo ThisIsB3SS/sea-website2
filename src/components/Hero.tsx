@@ -16,6 +16,7 @@ function Hero() {
     <section
       className="hero-section flex flex-col items-center justify-center size-full -mt-20"
       style={{ height: `calc(${SECTION_HEIGHT}px /1.2  )` }}
+      aria-label="Bienvenue sur SEA Webstudio"
     >
       <motion.div
         className="flex flex-col items-center justify-center gap-4 size-full"
@@ -26,6 +27,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 80 }}
           transition={{ duration: 0.8 }}
+          role="heading"
+          aria-level={1}
         >
           SEA Webstudio
         </motion.h1>
@@ -34,6 +37,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 80 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          role="heading"
+          aria-level={2}
         >
           Surfez sur le digital
         </motion.p>
@@ -42,6 +47,8 @@ function Hero() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 80 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          role="heading"
+          aria-level={2}
         >
           Donnez de l'émotion
         </motion.p>

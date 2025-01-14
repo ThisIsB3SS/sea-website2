@@ -68,6 +68,8 @@ const Card = ({
       dragConstraints={{ left: 0, right: 0 }}
       onDragEnd={handleDragEnd}
       data-id={index}
+      role="article"
+      aria-label={`Témoignage de ${name}`}
     >
       <img
         src={avatar}
@@ -82,8 +84,15 @@ const Card = ({
 };
 function Testimonials() {
   return (
-    <section className="testimonials-section size-full px-12 h-[60vh] flex md:flex-row flex-col items-start justify-start  md:gap-0 gap-8 ">
-      <h2 className="text-gray-500 text-2xl font-bold text-nowrap">
+    <section
+      className="testimonials-section size-full px-12 h-[60vh] flex md:flex-row flex-col items-start justify-start  md:gap-0 gap-8 "
+      aria-label="Témoignages de SEA Webstudio"
+    >
+      <h2
+        className="text-gray-500 text-2xl font-bold text-nowrap"
+        role="heading"
+        aria-level={2}
+      >
         Témoignages
       </h2>
       <SwipeCards />

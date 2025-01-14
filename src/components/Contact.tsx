@@ -17,6 +17,7 @@ function Contact() {
     <section
       className="contact-section w-full h-[80vh] px-12 flex flex-col items-center justify-center gap-8 m-0"
       id="Contact"
+      aria-label="Contactez SEA Webstudio"
     >
       <p className="text-gray-500 text-xl md:text-2xl font-bold">
         Parlons de votre projet en visio

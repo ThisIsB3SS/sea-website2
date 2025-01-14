@@ -20,14 +20,18 @@ function Navbar() {
   }, []);
 
   return (
-    <div
+    <nav
       className={`flex justify-between items-center p-3 size-fit backdrop-blur-lg bg-gradient-to-tr from-slate-600 to-slate-900 fixed left-1/2 -translate-x-1/2 right-0 z-50 rounded-2xl border-2 border-slate-200 transition-all duration-300 ease-in-out ${
         isAtFooter ? 'md:bottom-8 bottom-20' : 'bottom-8'
       }`}
+      aria-label="Navigation principale"
     >
-      <ul className="flex gap-4 size-full justify-center flex-nowrap p-2">
+      <ul
+        className="flex gap-4 size-full justify-center flex-nowrap p-2"
+        role="navigation"
+      >
         {['Projets', 'A propos', 'Services', 'Contact'].map((item) => (
-          <li key={item} className="relative">
+          <li key={item} className="relative" role="menuitem">
             <a
               href={`#${item}`}
               className={`lg:text-xl md:text-lg sm:text-md uppercase font-bold text-nowrap transition-all duration-300 ${
@@ -35,6 +39,8 @@ function Navbar() {
                   ? 'text-white'
                   : 'text-slate-400 hover:text-white'
               }`}
+              aria-label={`Aller à la section ${item}`}
+              aria-current={activeSection === item}
             >
               {item}
               {activeSection === item && (
@@ -44,7 +50,7 @@ function Navbar() {
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }
 

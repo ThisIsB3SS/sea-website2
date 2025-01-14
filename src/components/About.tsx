@@ -6,6 +6,7 @@ function About() {
     <section
       className="about-section w-full h-fit flex lg:flex-row flex-col items-start justify-start px-12 lg:gap-0 gap-8"
       id="A propos"
+      aria-label="A propos de SEA Webstudio"
     >
       <h2 className="text-gray-500 text-2xl font-bold text-nowrap">A propos</h2>
       <div className="about-cards-container flex items-center justify-center gap-4 flex-wrap size-full">

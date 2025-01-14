@@ -17,8 +17,15 @@ function Services() {
     <section
       className="services-section size-full flex lg:flex-row flex-col items-start justify-start px-12  lg:gap-0 gap-8"
       id="Services"
+      aria-label="Services de SEA Webstudio"
     >
-      <h2 className="text-gray-500 text-2xl font-bold text-nowrap">Services</h2>
+      <h2
+        className="text-gray-500 text-2xl font-bold text-nowrap"
+        role="heading"
+        aria-level={2}
+      >
+        Services
+      </h2>
       <div className="services-cards-container flex items-start justify-center gap-12 flex-wrap size-full">
         {data.services.map((item: any, index: number) => {
           return (
@@ -32,6 +39,8 @@ function Services() {
               initial={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: index * 0.02 }}
               whileInView={{ opacity: 1, y: 0 }}
+              role="article"
+              aria-label={`Service ${item.title}`}
             >
               <p className="text-gray-500 text-lg font-bold absolute top-4 left-4 ">
                 {item.price}
@@ -45,6 +54,8 @@ function Services() {
                 className={`tags-container ${
                   openStates[index] ? 'block lg:flex' : 'hidden lg:flex'
                 } lg:flex flex-col place-items-start size-full gap-0 overflow-hidden mb-8 md:mb-12`}
+                role="list"
+                aria-label={`Technologies utilisées dans le service ${item.title}`}
               >
                 <ul className="w-full text-gray-500 text-lg font-semibold block ">
                   {item.tags
@@ -77,6 +88,8 @@ function Services() {
 
               {!openStates[index] ? (
                 <button
+                  role="button"
+                  aria-label={`Voir plus sur le service ${item.title}`}
                   onClick={() => toggleCard(index)}
                   className=" block text-nowrap absolute bottom-4 left-1/2 -translate-x-1/2  text-gray-500 text-lg font-semibold border-2 border-gray-500 rounded-full hover:bg-gray-500 hover:text-white  transition-all duration-300 px-4 py-2 "
                 >
@@ -85,6 +98,8 @@ function Services() {
               ) : (
                 <a
                   href={'#Contact'}
+                  role="button"
+                  aria-label={`Lien vers la section Contact pour le service ${item.title}`}
                   className="block text-nowrap absolute bottom-4 left-1/2 -translate-x-1/2 text-gray-500 text-lg font-semibold border-2 border-gray-500 rounded-full hover:bg-gray-500 hover:text-white  transition-all duration-300 px-4 py-2"
                 >
                   Contactez-nous

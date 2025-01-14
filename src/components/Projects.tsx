@@ -7,8 +7,15 @@ function Projects() {
     <section
       className="projects-section h-fit w-full flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center md:px-4 lg:px-12 px-0 mb-0"
       id="Projets"
+      aria-label="Projets de SEA Webstudio"
     >
-      <h2 className="text-gray-500 text-2xl font-bold text-center">Projets</h2>
+      <h2
+        className="text-gray-500 text-2xl font-bold text-center"
+        role="heading"
+        aria-level={2}
+      >
+        Projets
+      </h2>
       <div className="projects-wrapper flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8">
         {data.projects.map((project: any, index: number) => (
           <motion.div
@@ -18,6 +25,8 @@ function Projects() {
             initial={{ scale: 0.9, opacity: 0 }}
             transition={{ duration: 0.5, delay: index * 0.08 }}
             whileInView={{ scale: 1.05, opacity: 1 }}
+            role="article"
+            aria-label={`Projet ${project.title}`}
           >
             <div className="projects-inner-container w-full lg:w-fit h-fit bg-gray-500 p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center">
               <img
@@ -35,6 +44,8 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex place-items-center gap-2 flex-nowrap group-hover:text-gray-800 transition-all duration-300"
+                  role="link"
+                  aria-label={`Lien vers le projet ${project.title}`}
                 >
                   {project.title}
                   <FaExternalLinkAlt
@@ -49,6 +60,8 @@ function Projects() {
                     <p
                       className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300"
                       key={tag}
+                      role="link"
+                      aria-label={`Technologie utilisée dans le projet ${project.title} : ${tag}`}
                     >
                       {tag}
                     </p>
@@ -56,6 +69,8 @@ function Projects() {
                     <p
                       className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300"
                       key={tag}
+                      role="link"
+                      aria-label={`Technologie utilisée dans le projet ${project.title} : ${tag}`}
                     >
                       {tag} /
                     </p>
