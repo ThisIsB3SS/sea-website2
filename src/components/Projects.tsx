@@ -1,7 +1,7 @@
 import data from '@/data/data.json';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-
+import ShinyText from '@/components/ui/ShinyText';
 function Projects() {
   return (
     <section
@@ -16,7 +16,7 @@ function Projects() {
       >
         Projets
       </h2>
-      <div className="projects-wrapper flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8">
+      <div className="projects-wrapper flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8 z-0">
         {data.projects.map((project: any, index: number) => (
           <motion.div
             className="projects-container  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16"
@@ -29,7 +29,12 @@ function Projects() {
             aria-label={`Projet ${project.title}`}
           >
             <div className="projects-inner-container w-full lg:w-fit h-fit bg-gray-500 p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Lien vers le projet ${project.title}`}
+              >
                 <img
                   src={project.image}
                   alt={project.title}

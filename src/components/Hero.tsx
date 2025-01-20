@@ -15,7 +15,7 @@ function Hero() {
   const H1Text = () => {
     return (
       <motion.h1
-        className="text-center text-5xl font-thin text-indigo-900"
+        className="text-center text-5xl font-thin text-indigo-900 cursor-default"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 80 }}
         transition={{ duration: 0.8 }}
@@ -31,7 +31,7 @@ function Hero() {
   const P1Text = () => {
     return (
       <motion.p
-        className="hero-p text-center text-4xl font-thin text-indigo-900"
+        className="hero-p text-center text-4xl font-thin text-indigo-900 cursor-default"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 80 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -49,7 +49,7 @@ function Hero() {
   const P2Text = () => {
     return (
       <motion.p
-        className="hero-p text-center text-4xl font-thin text-indigo-900"
+        className="hero-p text-center text-4xl font-thin text-indigo-900 cursor-default"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 80 }}
         transition={{ duration: 0.8, delay: 0.4 }}

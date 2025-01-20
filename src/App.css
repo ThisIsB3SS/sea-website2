@@ -27,6 +27,9 @@ li,
 span {
   font-family: 'Montserrat', sans-serif;
 }
+nav {
+  z-index: 1000;
+}
 nav ul li a {
   font-family: 'MontserratAlt', sans-serif;
   font-weight: 600 !important;
