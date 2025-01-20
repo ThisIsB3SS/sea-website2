@@ -1,7 +1,7 @@
 import data from '@/data/data.json';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import ShinyText from '@/components/ui/ShinyText';
+import SpotlightCard from '@/components/ui/components/SpotlightCard/SpotlightCard';
 function Projects() {
   return (
     <section
@@ -28,7 +28,10 @@ function Projects() {
             role="article"
             aria-label={`Projet ${project.title}`}
           >
-            <div className="projects-inner-container w-full lg:w-fit h-fit bg-gray-500 p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center">
+            <SpotlightCard
+              spotlightColor={project.color}
+              className="projects-inner-container w-full lg:w-fit h-fit bg-transparent border border-gray-500 backdrop-blur-lg p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center"
+            >
               <a
                 href={project.link}
                 target="_blank"
@@ -38,12 +41,12 @@ function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded-lg hover:scale-105 transition-all duration-300"
+                  className="rounded-lg hover:scale-105 transition-all duration-300 z-40"
                   height={1000}
                   width={1000}
                 />
               </a>
-            </div>
+            </SpotlightCard>
             <div className="projects-text-container w-full lg:w-[80%] mt-4 flex md:flex-row md:justify-between md:items-center flex-col justify-start items-start gap-2 size-fit">
               <h2 className="text-2xl text-gray-500 font-semibold text-nowrap group">
                 <a
