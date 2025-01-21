@@ -4,10 +4,12 @@ function Footer() {
   return (
     <footer className="w-screen h-fit lg:h-20 flex flex-col lg:flex-row  justify-start md:justify-between items-center mb-0 lg:mb-8 -translate-y-60 lg:-translate-y-0 mt-20  md:mt-12 md:px-12 px-4 lg:py-12 py-0 overflow-hidden ">
       <div className="copyright flex flex-col items-center justify-center  size-fit">
-        <p className="text-md text-gray-500">
-          Copyright © 2025 SEA Webstudio.
+        <p className="text-sm text-gray-500 font-montserrat">
+          Copyright © 2025 SEA Webstudio
         </p>
-        <p className="text-md text-gray-500">All rights reserved.</p>
+        <p className="text-sm text-gray-500 font-montserrat">
+          All rights reserved
+        </p>
       </div>
       <div className="social-links flex  items-center justify-center gap-2 size-fit ">
         <div className="flex items-center size-fit justify-center border-2 rounded-lg p-2 ">

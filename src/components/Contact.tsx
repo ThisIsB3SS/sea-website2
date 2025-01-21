@@ -1,7 +1,7 @@
 import { FaEnvelope, FaCopy, FaCheck, FaPhone } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import PixelCard from '@/components/ui/components/PixelCard/PixelCard';
 function Contact() {
   const [isCopied, setIsCopied] = useState(false);
   const calendarLink = 'https://zcal.co/seawebstudio/30min';
@@ -29,7 +29,7 @@ function Contact() {
         <div className="absolute inset-0 z-20 before:absolute before:left-0 before:top-0 before:w-1/6 before:h-full before:bg-gradient-to-r before:from-white before:to-transparent before:filter before:blur-3 after:absolute after:right-0 after:top-0 after:w-1/6 after:h-full after:bg-gradient-to-l after:from-white after:to-transparent after:filter after:blur-3"></div>
 
         <motion.div
-          className="flex items-center justify-center size-full"
+          className="flex items-center justify-center size-full relative"
           animate={{
             x: ['0%', '-100%'],
             transition: {

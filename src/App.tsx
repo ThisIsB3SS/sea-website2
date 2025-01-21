@@ -11,6 +11,7 @@ import Footer from '@/layout/Footer';
 import { useContext, createContext, useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import Loader from './components/ui/loader';
+import Waves from '@/components/ui/Backgrounds/Waves/Waves';
 
 const SectionHeightContext = createContext<number>(900);
 function App() {
@@ -44,6 +45,20 @@ function App() {
               borderBottomRightRadius: '400px',
             }}
           >
+            <Waves
+              className="size-screen"
+              lineColor="#fff"
+              backgroundColor="rgba(255, 255, 255, 0.2)"
+              waveSpeedX={0.02}
+              waveSpeedY={0.01}
+              waveAmpX={40}
+              waveAmpY={20}
+              friction={0.9}
+              tension={0.01}
+              maxCursorMove={120}
+              xGap={12}
+              yGap={36}
+            />
             <Logo />
             <Navbar />
             <Hero />
