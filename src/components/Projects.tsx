@@ -10,7 +10,7 @@ function Projects() {
       aria-label="Projets de SEA Webstudio"
     >
       <h2
-        className="text-gray-500 text-2xl font-regular text-center"
+        className="text-gray-500 text-2xl font-regular text-center z-10"
         role="heading"
         aria-level={2}
       >
@@ -19,7 +19,7 @@ function Projects() {
       <div className="projects-wrapper flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8 z-0">
         {data.projects.map((project: any, index: number) => (
           <motion.div
-            className="projects-container  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16"
+            className="projects-container  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16 z-10"
             key={project.title}
             style={{ zIndex: data.projects.length - index }}
             initial={{ scale: 0.9, opacity: 0 }}
@@ -30,7 +30,7 @@ function Projects() {
           >
             <SpotlightCard
               spotlightColor={project.color}
-              className="projects-inner-container w-full lg:w-fit h-fit bg-transparent border border-gray-500 backdrop-blur-lg p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center"
+              className="projects-inner-container z-10 w-full lg:w-fit h-fit bg-transparent border border-gray-500 backdrop-blur-lg p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center"
             >
               <a
                 href={project.link}

@@ -39,14 +39,14 @@ function App() {
       ) : (
         <>
           <main
-            className="flex flex-col items-center justify-center h-fit w-screen gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0 overflow-hidden"
+            className="relative flex flex-col items-center justify-center h-fit w-screen gap-12 bg-slate-200 z-0 mb-12 p-0 mt-0 my-0 overflow-hidden"
             style={{
               borderBottomLeftRadius: '400px',
               borderBottomRightRadius: '400px',
             }}
           >
             <Waves
-              className="size-screen"
+              className="size-screen fixed bottom-0"
               lineColor="#fff"
               backgroundColor="rgba(255, 255, 255, 0.2)"
               waveSpeedX={0.02}
