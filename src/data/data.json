@@ -1,18 +1,22 @@
 {
-  "about": [
-    {
-      "number": 3,
-      "text": "Années d'XP"
-    },
-    {
-      "number": 25,
-      "text": "Projets menés"
-    },
-    {
-      "number": 20,
-      "text": "Clients satisfaits"
-    }
-  ],
+  "about": {
+    "text": "Je suis un développeur fullstack passionné par le développement web et mobile. J'ai une expérience de 3 ans dans le développement web et mobile. Je suis un développeur fullstack passionné par le développement web et mobile. J'ai une expérience de 3 ans dans le développement web et mobile.",
+    "cards": [
+      {
+        "number": 3,
+        "text": "Années d'XP"
+      },
+      {
+        "number": 25,
+        "text": "Projets menés"
+      },
+      {
+        "number": 20,
+        "text": "Clients satisfaits"
+      }
+    ]
+  },
+
   "projects": [
     {
       "title": "Louise Desmons",

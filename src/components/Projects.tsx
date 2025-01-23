@@ -16,10 +16,10 @@ function Projects() {
       >
         Projets
       </h2>
-      <div className="projects-wrapper flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8 z-0">
+      <div className="projects-wrapper relative flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8 z-0">
         {data.projects.map((project: any, index: number) => (
           <motion.div
-            className="projects-container  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16 z-10"
+            className="projects-container sticky top-0  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16 z-10"
             key={project.title}
             style={{ zIndex: data.projects.length - index }}
             initial={{ scale: 0.9, opacity: 0 }}

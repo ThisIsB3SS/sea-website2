@@ -11,19 +11,19 @@ function About() {
       <h2 className="text-gray-500 text-2xl font-regular text-nowrap z-10 cursor-default">
         A propos
       </h2>
-      <div className="about-cards-container flex items-center justify-center gap-4 flex-wrap size-full">
-        {data.about.map((item, index) => {
+      <div className="about-inner-container flex  items-center justify-center gap-4 flex-wrap size-full">
+        {data.about.cards.map((item, index) => {
           return (
             <motion.div
               key={index}
-              className="about-cards flex items-center justify-center rounded-xl bg-transparent backdrop-blur-md border-2 border-gray-500 md:w-[25%] w-full h-60"
+              className="about-cards flex items-center justify-center rounded-xl bg-transparent backdrop-blur-md border-2 border-gray-500 w-[33%] h-60 order-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
               <div className="flex flex-col items-center justify-center size-full gap-4">
                 <AnimatedNumbers
-                  animateToNumber={item.number}
+                  animateToNumber={item.number ?? 0}
                   fontStyle={{
                     fontSize: 60,
                     color: 'black',
@@ -39,6 +39,11 @@ function About() {
             </motion.div>
           );
         })}
+        <div className="about-text-container flex flex-col items-center justify-center gap-4 size-1/2 bg-transparent backdrop-blur-sm order-1 ">
+          <p className="text-gray-500 text-lg font-regular w-1/2">
+            {data.about.text}
+          </p>
+        </div>
       </div>
     </section>
   );
