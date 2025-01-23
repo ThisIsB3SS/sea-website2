@@ -1,10 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
-import {
-  useSprings,
-  animated,
-  SpringValue,
-  EasingFunction,
-} from '@react-spring/web';
+import { useSprings, animated, EasingFunction } from '@react-spring/web';
 
 interface AnimationStep {
   filter: string;

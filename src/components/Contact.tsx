@@ -1,7 +1,6 @@
 import { FaEnvelope, FaCopy, FaCheck, FaPhone } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import PixelCard from '@/components/ui/components/PixelCard/PixelCard';
 function Contact() {
   const [isCopied, setIsCopied] = useState(false);
   const calendarLink = 'https://zcal.co/seawebstudio/30min';

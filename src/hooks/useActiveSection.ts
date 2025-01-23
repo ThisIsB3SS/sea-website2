@@ -8,6 +8,7 @@ export function useActiveSection() {
       const sections = document.querySelectorAll('section[id]');
 
       sections.forEach((section) => {
+        // @ts-ignore
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         const scrollY = window.scrollY;

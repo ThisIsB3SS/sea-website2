@@ -12,22 +12,6 @@ function Hero() {
     [0, SECTION_HEIGHT - 200],
     [0, -SECTION_HEIGHT / 3]
   );
-  const H1Text = () => {
-    return (
-      <motion.h1
-        className="text-center text-5xl font-thin text-indigo-900 cursor-default"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 80 }}
-        transition={{ duration: 0.8 }}
-      >
-        {'SEA Webstudio'.split('').map((child, idx) => (
-          <span className={styles.hoverText} key={idx}>
-            {child}
-          </span>
-        ))}
-      </motion.h1>
-    );
-  };
   const P1Text = () => {
     return (
       <motion.h1
