@@ -89,7 +89,7 @@ function Testimonials() {
       aria-label="Témoignages de SEA Webstudio"
     >
       <h2
-        className="text-gray-500 text-2xl font-regular text-nowrap"
+        className="text-gray-500 text-2xl font-regular text-nowrap z-10 cursor-default"
         role="heading"
         aria-level={2}
       >

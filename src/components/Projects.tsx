@@ -10,7 +10,7 @@ function Projects() {
       aria-label="Projets de SEA Webstudio"
     >
       <h2
-        className="text-gray-500 text-2xl font-regular text-center z-10"
+        className="text-gray-500 text-2xl font-regular text-center z-10 cursor-default"
         role="heading"
         aria-level={2}
       >
@@ -30,7 +30,7 @@ function Projects() {
           >
             <SpotlightCard
               spotlightColor={project.color}
-              className="projects-inner-container z-10 w-full lg:w-fit h-fit bg-transparent border border-gray-500 backdrop-blur-lg p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center"
+              className="projects-inner-container z-10 w-full lg:w-fit h-fit bg-transparent border border-gray-500 backdrop-blur-md p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center"
             >
               <a
                 href={project.link}
@@ -53,13 +53,13 @@ function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex place-items-center gap-2 flex-nowrap group-hover:text-gray-800 transition-all duration-300"
+                  className="flex place-items-center gap-2 flex-nowrap group-hover:text-indigo-900 transition-all duration-300"
                   role="link"
                   aria-label={`Lien vers le projet ${project.title}`}
                 >
                   {project.title}
                   <FaExternalLinkAlt
-                    className="text-gray-500 text-xl group-hover:text-gray-800 transition-all duration-300"
+                    className="text-gray-500 text-xl group-hover:text-indigo-900 transition-all duration-300"
                     size={12}
                   />
                 </a>
@@ -68,7 +68,7 @@ function Projects() {
                 {project.tags.map((tag: string, index: number) =>
                   index === project.tags.length - 1 ? (
                     <p
-                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300 cursor-default"
+                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-indigo-900 transition-all duration-300 cursor-default"
                       key={tag}
                       role="link"
                       aria-label={`Technologie utilisée dans le projet ${project.title} : ${tag}`}
@@ -77,7 +77,7 @@ function Projects() {
                     </p>
                   ) : (
                     <p
-                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-gray-800 transition-all duration-300 cursor-default"
+                      className="text-gray-500 text-nowrap text-sm uppercase hover:text-indigo-900 transition-all duration-300 cursor-default"
                       key={tag}
                       role="link"
                       aria-label={`Technologie utilisée dans le projet ${project.title} : ${tag}`}

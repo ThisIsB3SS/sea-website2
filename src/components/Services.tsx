@@ -20,7 +20,7 @@ function Services() {
       aria-label="Services de SEA Webstudio"
     >
       <h2
-        className="text-gray-500 text-2xl font-regular text-nowrap"
+        className="text-gray-500 text-2xl font-regular text-nowrap z-10 cursor-default"
         role="heading"
         aria-level={2}
       >
@@ -31,7 +31,7 @@ function Services() {
           return (
             <motion.div
               key={index}
-              className={`services-card flex flex-col items-center justify-start gap-4 rounded-xl border-2 border-gray-500 lg:w-1/3 w-full ${
+              className={`services-card flex flex-col items-center justify-start gap-4 rounded-xl bg-transparent backdrop-blur-md border-2 border-gray-500 lg:w-1/3 w-full ${
                 openStates[index]
                   ? 'h-fit'
                   : 'min-h-[40vh]  md:min-h-[32vh] lg:min-h-[44vh] h-fit'

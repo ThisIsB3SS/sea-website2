@@ -30,8 +30,8 @@ function Hero() {
   };
   const P1Text = () => {
     return (
-      <motion.p
-        className="hero-p text-center text-4xl font-thin text-indigo-900 cursor-default"
+      <motion.h1
+        className="hero-p text-center text-6xl font-regular text-indigo-900 cursor-default"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 80 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -43,7 +43,7 @@ function Hero() {
             {child}
           </span>
         ))}
-      </motion.p>
+      </motion.h1>
     );
   };
   const P2Text = () => {
@@ -74,37 +74,7 @@ function Hero() {
         className="flex flex-col items-center justify-center gap-4 size-full"
         style={{ opacity, translateY, filter: `blur(${blur}px)` }}
       >
-        {/* <motion.h1
-          className="text-8xl text-gray-500 font-bold text-wrap hidden"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 80 }}
-          transition={{ duration: 0.8 }}
-          role="heading"
-          aria-level={1}
-        >
-          SEA Webstudio
-        </motion.h1>
-        <motion.p
-          className="hero-p text-4xl text-gray-500"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 80 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          role="heading"
-          aria-level={2}
-        >
-          Surfez sur le digital
-        </motion.p>
-        <motion.p
-          className="hero-p text-4xl text-gray-500"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 80 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          role="heading"
-          aria-level={2}
-        >
-          Donnez de l'émotion
-        </motion.p> */}
-        <H1Text />
+        {/* <H1Text /> */}
         <P1Text />
         <P2Text />
       </motion.div>
