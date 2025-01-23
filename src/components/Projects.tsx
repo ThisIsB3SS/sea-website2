@@ -19,7 +19,7 @@ function Projects() {
       <div className="projects-wrapper relative flex flex-col items-center justify-start flex-wrap size-full lg:px-12 px-12 mt-8 lg:gap-12 gap-8 z-0">
         {data.projects.map((project: any, index: number) => (
           <motion.div
-            className="projects-container sticky top-0  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16 z-10"
+            className="project-container sticky top-0  flex flex-col items-center justify-start rounded-2xl w-full h-fit mb-16 z-10"
             key={project.title}
             style={{ zIndex: data.projects.length - index }}
             initial={{ scale: 0.9, opacity: 0 }}
@@ -30,7 +30,7 @@ function Projects() {
           >
             <SpotlightCard
               spotlightColor={project.color}
-              className="projects-inner-container z-10 w-full lg:w-fit h-fit bg-transparent border border-gray-500 backdrop-blur-md p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center"
+              className="project-inner-container z-10 w-full lg:w-fit h-fit bg-transparent border border-gray-200 backdrop-blur-md p-8 lg:p-16 rounded-2xl flex flex-col items-center justify-center"
             >
               <a
                 href={project.link}
@@ -47,7 +47,7 @@ function Projects() {
                 />
               </a>
             </SpotlightCard>
-            <div className="projects-text-container w-full lg:w-[80%] mt-4 flex md:flex-row md:justify-between md:items-center flex-col justify-start items-start gap-2 size-fit">
+            <div className="project-text-container w-full lg:w-[80%] mt-4 flex md:flex-row md:justify-between md:items-center flex-col justify-start items-start gap-2 size-fit">
               <h2 className="text-2xl text-gray-500 font-semibold text-nowrap group">
                 <a
                   href={project.link}
@@ -64,7 +64,7 @@ function Projects() {
                   />
                 </a>
               </h2>
-              <div className="projects-tags-container flex flex-row gap-2 flex-nowrap">
+              <div className="project-tags-container flex flex-row gap-2 flex-nowrap">
                 {project.tags.map((tag: string, index: number) =>
                   index === project.tags.length - 1 ? (
                     <p

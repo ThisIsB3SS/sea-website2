@@ -46,9 +46,9 @@ function App() {
             }}
           >
             <Waves
-              className="size-screen fixed bottom-0 bg-red-500"
+              className="size-screen fixed bottom-0"
               lineColor="#fff"
-              backgroundColor="rgba(255, 255, 255, 0.1)"
+              backgroundColor="rgba(255, 255, 255, 0.2)"
               waveSpeedX={0.02}
               waveSpeedY={0.01}
               waveAmpX={40}

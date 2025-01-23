@@ -21,10 +21,11 @@ function Navbar() {
 
   return (
     <nav
-      className={`flex justify-between items-center p-3 size-fit backdrop-blur-lg bg-gradient-to-tr from-slate-600 to-slate-900 fixed left-1/2 -translate-x-1/2 right-0  rounded-2xl border-2 border-slate-200 transition-all duration-300 ease-in-out ${
+      className={`flex justify-between items-center p-3 size-fit backdrop-blur-lg bg-indigo-300 fixed left-1/2 -translate-x-1/2 right-0  rounded-2xl border-2 border-slate-200 transition-all duration-300 ease-in-out ${
         isAtFooter ? 'md:bottom-8 bottom-20' : 'bottom-8'
       }`}
       aria-label="Navigation principale"
+      style={{ zIndex: 1000 }}
     >
       <ul
         className="flex gap-4 size-full justify-center flex-nowrap p-2"
@@ -34,10 +35,10 @@ function Navbar() {
           <li key={item} className="relative" role="menuitem">
             <a
               href={`#${item}`}
-              className={`!font-montserrat lg:text-xl md:text-lg sm:text-md uppercase font-bold text-nowrap transition-all duration-300 ${
+              className={`!font-montserratalt lg:text-xl md:text-lg text-md font-thin text-nowrap transition-all duration-300 ${
                 activeSection === item
                   ? 'text-white'
-                  : 'text-slate-400 hover:text-white'
+                  : 'text-gray-900 hover:text-white'
               }`}
               aria-label={`Aller à la section ${item}`}
               aria-current={activeSection === item}
