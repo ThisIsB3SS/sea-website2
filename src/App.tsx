@@ -11,7 +11,7 @@ import Footer from '@/layout/Footer';
 import { useContext, createContext, useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import Loader from './components/ui/loader';
-import Waves from '@/components/ui/Backgrounds/Waves/Waves';
+import Waves from './components/ui/Backgrounds/Waves';
 
 const SectionHeightContext = createContext<number>(900);
 function App() {

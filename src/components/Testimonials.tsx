@@ -11,8 +11,7 @@ type Card = {
 const cardsData: Card[] = data.testimonials;
 const SwipeCards = () => {
   const [cards, setCards] = useState<Card[]>(() => {
-    // Trier les cartes pour que la carte avec id: 1 soit la dernière
-    return [...cardsData].sort((a, b) => (a.id === 1 ? 1 : -1));
+    return [...cardsData].sort((a) => (a.id === 1 ? 1 : -1));
   });
   return (
     <div className="swipe-cards size-full grid place-items-center pl-[10vw]">
