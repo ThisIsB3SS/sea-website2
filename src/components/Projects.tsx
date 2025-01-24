@@ -23,8 +23,16 @@ function Projects() {
             key={project.title}
             style={{ zIndex: data.projects.length - index }}
             initial={{ scale: 0.9, opacity: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.08 }}
-            whileInView={{ scale: 1.05, opacity: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.08,
+              type: 'spring',
+            }}
+            whileInView={{
+              scale: 1.05,
+              opacity: 1,
+            }}
+            viewport={{ once: true }}
             role="article"
             aria-label={`Projet ${project.title}`}
           >

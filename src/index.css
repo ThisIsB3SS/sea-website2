@@ -41,7 +41,7 @@
 @font-face {
   font-family: 'Pinkerston';
   src: url('/fonts/Pinkerston.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
