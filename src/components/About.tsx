@@ -29,10 +29,6 @@ function About() {
                     color: 'black',
                     fontWeight: 'bold',
                   }}
-                  transitions={(index) => ({
-                    type: 'spring',
-                    duration: index + 0.9,
-                  })}
                 />
                 <p className="text-gray-500 text-2xl font-bold">{item.text}</p>
               </div>
