@@ -19,7 +19,13 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      duration: 1.5,
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      lerp: 0.1,
+      syncTouch: true,
+    });
 
     function raf(time: number) {
       lenis.raf(time);
@@ -28,6 +34,9 @@ function App() {
     }
 
     requestAnimationFrame(raf);
+    return () => {
+      lenis.destroy();
+    };
   }, []);
   setTimeout(() => {
     setIsLoading(false);
@@ -50,7 +59,7 @@ function App() {
               lineColor="#fff"
               backgroundColor="rgba(255, 255, 255, 0.2)"
               waveSpeedX={0.02}
-              waveSpeedY={0.01}
+              waveSpeedY={0.005}
               waveAmpX={40}
               waveAmpY={20}
               friction={0.9}
@@ -58,6 +67,11 @@ function App() {
               maxCursorMove={120}
               xGap={12}
               yGap={36}
+              style={{
+                willChange: 'transform',
+                transform: 'translate3d(0,0,0)',
+                backfaceVisibility: 'hidden',
+              }}
             />
             <Logo />
             <Navbar />

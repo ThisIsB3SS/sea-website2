@@ -10,7 +10,10 @@ function Hero() {
   const translateY = useTransform(
     scrollY,
     [0, SECTION_HEIGHT - 200],
-    [0, -SECTION_HEIGHT / 3]
+    [0, -SECTION_HEIGHT / 3],
+    {
+      clamp: true,
+    }
   );
   const P1Text = () => {
     return (

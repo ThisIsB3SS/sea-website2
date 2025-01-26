@@ -9,6 +9,9 @@ body {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .swipe-cards .card:nth-child(1) {
   rotate: 3deg;
@@ -33,4 +36,10 @@ nav {
 nav ul li a {
   font-family: 'MontserratAlt', sans-serif;
   font-weight: 600 !important;
+}
+.main-content {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  will-change: transform;
 }
