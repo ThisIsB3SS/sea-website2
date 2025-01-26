@@ -1,5 +1,5 @@
 import data from '@/data/data.json';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import SpotlightCard from '@/components/ui/components/SpotlightCard/SpotlightCard';
 function Projects() {

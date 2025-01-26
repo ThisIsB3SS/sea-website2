@@ -1,5 +1,5 @@
 import data from '@/data/data.json';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { motion, useMotionValue, useTransform } from 'motion/react';
 import { Dispatch, SetStateAction, useState } from 'react';
 type Card = {
   id: number;

@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'motion/react';
 import { useSectionHeight } from '@/App';
 import styles from './styles/bubble.module.css';
 

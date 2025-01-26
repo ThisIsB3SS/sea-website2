@@ -1,6 +1,6 @@
 import { FaEnvelope, FaCopy, FaCheck, FaPhone } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 function Contact() {
   const [isCopied, setIsCopied] = useState(false);
   const calendarLink = 'https://zcal.co/seawebstudio/30min';

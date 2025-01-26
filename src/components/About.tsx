@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import data from '../data/data.json';
 import AnimatedNumbers from 'react-animated-numbers';
 function About() {
