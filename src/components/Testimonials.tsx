@@ -53,7 +53,7 @@ const Card = ({
 
   return (
     <motion.div
-      className="card h-[50vh] w-[35vw] flex flex-col items-center justify-center bg-transparent backdrop-blur-xl p-4 gap-8 rounded-lg border-2 border-gray-400 size-1/2 hover:cursor-grab active:cursor-grabbing"
+      className="card lg:h-[50vh] lg:w-[35vw] h-[30vh] w-[25vw] flex flex-col items-center justify-center bg-transparent backdrop-blur-xl p-4 gap-8 rounded-lg border-2 border-gray-400 size-1/2 hover:cursor-grab active:cursor-grabbing"
       style={{
         gridRow: 1,
         gridColumn: 1,

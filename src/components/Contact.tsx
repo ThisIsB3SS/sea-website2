@@ -28,7 +28,7 @@ function Contact() {
         <div className="absolute inset-0 z-20 before:absolute before:left-0 before:top-0 before:w-1/6 before:h-full before:bg-gradient-to-r before:from-white before:to-transparent before:filter before:blur-3 after:absolute after:right-0 after:top-0 after:w-1/6 after:h-full after:bg-gradient-to-l after:from-white after:to-transparent after:filter after:blur-3"></div>
 
         <motion.div
-          className="flex items-center justify-center size-full relative"
+          className="flex items-center justify-center size-full relative z-0"
           animate={{
             x: ['0%', '-100%'],
             transition: {
@@ -40,12 +40,12 @@ function Contact() {
         >
           {Array.from({ length: 4 }).map((_, index) => (
             <span
-              className="text-gray-500 uppercase lg:text-8xl text-4xl size-full font-bold flex items-center justify-center lg:mx-4 mx-2 gap-8 text-nowrap group-hover:text-gray-700 transition-all duration-300"
+              className="text-gray-500 uppercase lg:text-8xl text-4xl size-full font-bold flex items-center justify-center lg:mx-4 mx-2 gap-8 text-nowrap group-hover:text-indigo-900 transition-all duration-300 z-0"
               key={index}
             >
               Réserver un Call
               <FaPhone
-                className=" text-gray-500  font-bold p-0 m-0 text-center  group-hover:text-gray-700 transition-all duration-300 "
+                className=" text-gray-500  font-bold p-0 m-0 text-center  group-hover:text-indigo-900 transition-all duration-300 "
                 height={48}
                 width={48}
               />
