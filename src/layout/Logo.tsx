@@ -1,6 +1,6 @@
 function Logo() {
   return (
-    <div className="fixed -top-0 mx-auto z-50 w-full lg:w-[90%] h-20  backdrop-blur-lg  rounded-full flex items-center justify-center">
+    <div className="fixed -top-0 mx-auto z-50 w-full lg:w-[90%] h-20  backdrop-blur-lg bg-slate-100/10 rounded-full flex items-center justify-center">
       <a href="/" className="border-none size-fit ">
         <img
           src="/assets/SEA_Webstudio_logo_full.svg"
