@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
   font-family: 'MontserratAlt';
   src: url('/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf')

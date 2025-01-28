@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useSectionHeight } from '@/App';
-import styles from './styles/bubble.module.css';
 
 function Hero() {
   const SECTION_HEIGHT = useSectionHeight();
@@ -25,11 +24,7 @@ function Hero() {
         role="heading"
         aria-level={2}
       >
-        {'Surfez sur le digital'.split('').map((child, idx) => (
-          <span className={`${styles.hoverText} hero-p`} key={idx}>
-            {child}
-          </span>
-        ))}
+        Surfez sur le digital
       </motion.h1>
     );
   };
@@ -43,11 +38,7 @@ function Hero() {
         role="heading"
         aria-level={2}
       >
-        {"Donnez de l'émotion".split('').map((child, idx) => (
-          <span className={`${styles.hoverText} hero-p`} key={idx}>
-            {child}
-          </span>
-        ))}
+        Donnez de l'émotion
       </motion.p>
     );
   };
