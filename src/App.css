@@ -56,7 +56,7 @@ nav ul li a {
 
   width: var(--size);
   height: var(--size);
-  filter: blur(calc(var(--size) / 5));
+  filter: blur(calc(var(--size) / 5)) !important;
   background: linear-gradient(hsla(222, 84%, 60%, 1), hsl(164, 79%, 71%));
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 
